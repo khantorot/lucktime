@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="khan" />
+    <link rel="shortcut icon" type="image/png" href="./content/icons/shortcut.png">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+</head>
+
+<body>
+    <nav>
+        <div class="menuBtn">
+            <span></span>
+        </div>
+        <ul class="mainLinks">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./prizes.html">Призы</a></li>
+            <li><a href="./conditions.html">Условия</a></li>
+        </ul>
+        <div class="menuBlock">
+            <ul class="menuLinks">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./prizes.html">Призы</a></li>
+                <li><a href="./conditions.html">Условия</a></li>
+                <li><a href="./winners.html">Победители</a></li>
+                <li><a href="./contact.html">Контакты</a></li>
+            </ul>
+            <ul class="addLinks">
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><span class="singIn2">Войти</span></li>
+                <li><span class="register2">Регистрация</span></li>
+            </ul>
+            <ul class="followLinks">
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="./content/icons/facebook.png" alt="facebook"></a></li>
+                <li><a href="https://vk.com/" target="_blank"><img src="./content/icons/vkontakte.png" alt="vk"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="./content/icons/instagram.png" alt="instagram"></a></li>
+                <li><a href="https://www.whatsapp.com" target="_blank"><img src="./content/icons/whatsapp.png" alt="whatsapp"></a></li>
+            </ul>
+        </div>
+        <div class="profileBlock">
+            <div class="singIn">Войти</div>
+            <div class="register">Регистрация</div>
+        </div>
+    </nav>
+    <div class="modalWindow">
+        <div class="singInBlock">
+            <h4>Вход</h4>
+            <form action="" method="post">
+                <input type="text" placeholder="Номер телефона*" name="number" required autocomplete="off">
+                <input type="password" placeholder="Пароль (минимум 8 символов)*" name="password" required
+                    autocomplete="off">
+                <p class="forgotPassBtn">Забыли пароль?</p>
+                <a href="./profile.html" class="btn_link">Войти</a>
+                <p>Нет аккаунта? <span class="register1">Зарегистрироваться</span></p>
+            </form>
+            <span class="closeBtn"></span>
+        </div>
+        <div class="forgotPassBlock">
+            <h4>Восстановление пароля</h4>
+            <form action="" method="post">
+                <input type="text" placeholder="Номер телефона*" name="phone" required autocomplete="off">
+                <a href="./profile.html" class="btn_link">Восстановить</a>
+            </form>
+            <span class="closeBtn"></span>
+        </div>
+        <div class="registerBlock">
+            <h4>Регистрация</h4>
+            <form action="" method="post">
+                <input type="text" placeholder="Ваше имя" name="firstName" autocomplete="off" id="firstName">
+                <input type="text" placeholder="Номер телефона*" name="phone" required autocomplete="off" id="phone">
+                <input type="text" placeholder="Email" name="email" autocomplete="off" id="email">
+                <input type="password" placeholder="Пароль*" name="password" required autocomplete="off" id="password">
+                <input type="checkbox" id="consent" required>
+                <label for="consent" class="checkBox">Я согласен с <a href="#">условиями</a></label>
+                <input type="checkbox" id="age" required>
+                <label for="age" class="checkBox">Мне больше 18 лет</label>
+                <a href="./profile.html" class="registerBtn btn_link">Зарегистрироваться</a>
+                <p>Уже есть аккаунт? <span class="singIn1">Войти</span></p>
+            </form>
+            <span class="closeBtn"></span>
+        </div>
+        <div class="verification">
+            <h4>Подтверждение</h4>
+            <form action="" method="post">
+                <h5>Количество товаров</h5>
+                <span class="minus">-</span>
+                <input type="text" name="count" value="1" required autocomplete="off" id="count">
+                <span class="plus">+</span>
+                <span class="sum">100 <span>сом</span></span>
+                <span class="choosenProduct"></span>
+                <a href="./profile.html">Оформить</a>
+            </form>
+            <span class="closeBtn"></span>
+        </div>
+    </div>
+    <div class="circular_wrap">
+        <div class="circular-text">
+            <span id="rotated">lucktime • lucktime • lucktime • lucktime • lucktime • lucktime • lucktime • lucktime</span>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header>
+            <img src="./content/images/wave.png" alt="bgImg" class="bgImg">
+        </header>
+        <section>
+            <h2 class="section_title">Наши контакты</h2>
+            <div class="content">
+                <form action="" method="post">
+                    <input type="text" placeholder="Ваше Имя">
+                    <input type="text" placeholder="Ваша Фамилия">
+                    <input type="text" placeholder="Номер телефона">
+                    <input type="text" placeholder="Ваш Email">
+                    <textarea placeholder="Ваше сообщение"></textarea>
+                    <button>Отправить</button>
+                </form>
+                <ul class="contacts">
+                    <li><a href="#">+353 1 557 1321</a></li>
+                    <li><a href="#">lucktime@gmail.com</a></li>
+                    <li class="address">Токтогула 93,<br> пересекается с Тыныстанова <a href="#"><br>посмотреть на карте</a></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="linksF">
+                <ul>
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./prizes.html">Призы</a></li>
+                    <li><a href="./conditions.html">Условия</a></li>
+                    <li><a href="./winners.html">Победители</a></li>
+                    <li><a href="./contact.html">Контакты</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./prizes.html">Тур на двоих</a></li>
+                    <li><a href="./prizes.html">Корпоратив</a></li>
+                    <li><a href="./prizes.html">Машина</a></li>
+                    <li><a href="./prizes.html">Мебель</a></li>
+                    <li><a href="./prizes.html">Обучение</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="./license.html">Лицензия</a></li>
+                    <li><a href="./profile.html">Личный кабинет</a></li>
+                    <li><span class="singIn3">Войти</span></li>
+                    <li><span class="register3">Регистрация</span></li>
+                </ul>
+            </div>
+            <div class="followF">
+                <h4>Получaть последние новости от LuckTime</h4>
+                <form method="post">
+                    <input type="text" placeholder="Ваш Email" autocomplete="off" required>
+                    <button><img src="./content/icons/arrow.png" alt="arrow"></button>
+                </form>
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="./content/icons/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://vk.com/" target="_blank"><img src="./content/icons/vkontakte.png" alt="vk"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="./content/icons/instagram.png" alt="instagram"></a></li>
+                    <li><a href="https://www.whatsapp.com" target="_blank"><img src="./content/icons/whatsapp.png" alt="whatsapp"></a></li>
+                </ul>
+            </div>
+            <ul class="contactF">
+                <li>Адрес<a href="https://2gis.kg/bishkek" target="_blank">Токтогула 93</a></li>
+                <li>Номер<a href="tel:+996708348364" target="_blank">+996 708 348 364</a></li>
+                <li>Email<a href="mailto:lucktime@gmail.com" target="_blank">lucktime@gmail.com</a></li>
+            </ul>
+            <div class="caption">
+                <a href="./license.html">Все права защишены</a>
+                <p>© 2019 LuckTime</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <script src="./assets/js/circletype.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

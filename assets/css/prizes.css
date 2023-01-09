@@ -1,0 +1,94 @@
+header{
+	height: 300px;
+	width: 100%;
+}
+
+.bgImg{
+	transform: scaleY(1);
+}
+
+
+.menuLinks li:nth-child(1) a{
+	color: var(--bg);
+	text-decoration: none;
+}
+.menuLinks li:nth-child(2) a{
+	color: var(--index);
+	text-decoration: line-through;
+}
+.menuLinks li:nth-child(1) a:hover{
+	color: var(--index);
+}
+
+
+.prizes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding-left: 200px;
+    margin-right: 30px;
+}
+
+.prize{
+    width: 300px;
+    margin: 0 40px 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prize img{
+    margin-bottom: auto;
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0.7;
+    transition: ease-out 0.3s;
+}
+
+.prize:hover img{
+    opacity: 1;
+}
+
+.prize h4{
+    font-size: 16px;
+    max-width: 150px;
+}
+
+
+.prize span{
+    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: ease-out 0.3s;
+    color: var(--index);
+    border: 2px solid var(--index);
+}
+
+.prize span:hover{
+    background: var(--index);
+    color: var(--bg);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    header{
+        height: 170px;
+    }
+
+    .prizes{
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .prize{
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+    }
+}
